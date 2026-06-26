@@ -29,7 +29,7 @@ export default function Chip({
   as = "span",
   ...props
 }: ChipProps) {
-  const classes = `cursor-pointer rounded-pill border px-4 py-2.5 font-display text-sm font-semibold transition ${
+  const classes = `cursor-pointer rounded-pill border px-4 py-2.5 font-display text-[12.5px] font-semibold transition ${
     active
       ? "border-transparent bg-gradient-to-br from-green-500 to-green-600 text-white shadow-glow"
       : "border-mist-200 bg-white text-ink-soft hover:border-green-400 hover:text-green-600"

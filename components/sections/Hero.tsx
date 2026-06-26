@@ -24,19 +24,19 @@ export default function Hero() {
       <Container>
         <Reveal>
           <div className="mb-[26px]">
-            <span className="inline-flex items-center gap-2.5 rounded-pill border border-white/[.34] bg-white/[.12] py-[9px] pl-3 pr-[18px] font-display text-[13.5px] font-semibold text-white backdrop-blur-[12px]">
+            <span className="inline-flex items-center gap-2.5 rounded-pill border border-white/[.34] bg-white/[.12] py-[9px] pl-3 pr-[18px] font-display text-[12px] font-semibold text-white backdrop-blur-[12px]">
               <span className="h-[9px] w-[9px] rounded-full bg-lime-300 shadow-[0_0_0_4px_rgba(168,227,106,.25)]" />
               We are empowering farmers
             </span>
           </div>
 
-          <h1 className="max-w-[15ch] text-[clamp(44px,6.4vw,86px)] font-extrabold text-white">
+          <h1 className="max-w-[15ch] text-[clamp(36px,5.2vw,70px)] font-extrabold text-white">
             Insurance that grows <span className="text-grad">with the land.</span>
           </h1>
 
-          <p className="mt-[22px] max-w-[52ch] text-[clamp(17px,1.5vw,21px)] text-white/[.86]">
+          <p className="mt-[22px] max-w-[52ch] text-[clamp(15px,1.35vw,19px)] text-white/[.86]">
             Agricom Assurance protects farmers, agribusinesses and rural
-            communities with transparent, technology-driven cover — from seed to
+            communities with transparent, technology-driven cover from seed to
             harvest and beyond.
           </p>
 
@@ -56,10 +56,10 @@ export default function Hero() {
                 key={stat.label}
                 className="rounded-md border border-white/[.22] bg-white/10 px-6 py-[18px] backdrop-blur-[12px]"
               >
-                <b className="block font-display text-[30px] font-bold leading-none text-white">
+                <b className="block font-display text-[27px] font-bold leading-none text-white">
                   {stat.value}
                 </b>
-                <span className="mt-1.5 block text-[13px] text-white/[.78]">
+                <span className="mt-1.5 block text-[12px] text-white/[.78]">
                   {stat.label}
                 </span>
               </div>

@@ -20,12 +20,12 @@ export default function NewsletterForm() {
       <input
         type="email"
         required
-        placeholder={done ? "Subscribed — thank you!" : "Your email for season updates"}
-        className="min-w-0 flex-1 border-none bg-transparent px-3.5 py-2 font-body text-sm text-white outline-none placeholder:text-[#7FA088]"
+        placeholder={done ? "Subscribed thank you!" : "Your email for season updates"}
+        className="min-w-0 flex-1 border-none bg-transparent px-3.5 py-2 font-body text-[12.5px] text-white outline-none placeholder:text-[#7FA088]"
       />
       <button
         type="submit"
-        className="flex-none rounded-pill bg-gradient-to-br from-green-500 to-green-600 px-[18px] py-2.5 font-display text-sm font-semibold text-white"
+        className="flex-none rounded-pill bg-gradient-to-br from-green-500 to-green-600 px-[18px] py-2.5 font-display text-[12.5px] font-semibold text-white"
       >
         Subscribe
       </button>

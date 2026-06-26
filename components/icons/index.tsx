@@ -2,6 +2,7 @@
 // Each forwards props (className, width/height) so callers can size/colour them.
 
 import { SVGProps } from "react";
+import Image from "next/image";
 import type { IconName } from "@/lib/content";
 
 const stroke = {
@@ -12,21 +13,16 @@ const stroke = {
   strokeLinejoin: "round" as const,
 };
 
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" {...props}>
-      <path
-        d="M12 22c5-2 8.5-6 8.5-12V5L12 2 3.5 5v5C3.5 16 7 20 12 22Z"
-        fill="rgba(255,255,255,.16)"
-      />
-      <path
-        d="M12 16.5c0-3 2-5.2 5.2-5.2-.6 3.1-2.4 5.2-5.2 5.2Zm0 0c0-3-2-5.2-5.2-5.2.6 3.1 2.4 5.2 5.2 5.2Zm0 0V20"
-        stroke="#fff"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    <Image
+      src="/logo.png"
+      alt="Agricom Assurance"
+      width={22}
+      height={22}
+      priority
+      className={className}
+    />
   );
 }
 

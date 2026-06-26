@@ -8,20 +8,34 @@ import { CONTACT } from "@/lib/content";
 
 const DETAILS = [
   { icon: MapPin, title: "Head office", body: CONTACT.address },
-  { icon: Phone, title: "Call us", body: CONTACT.phone, href: CONTACT.phoneHref },
-  { icon: Mail, title: "Email", body: CONTACT.email, href: `mailto:${CONTACT.email}` },
+  {
+    icon: Phone,
+    title: "Call us",
+    body: CONTACT.phone,
+    href: CONTACT.phoneHref,
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    body: CONTACT.email,
+    href: `mailto:${CONTACT.email}`,
+  },
   { icon: Clock, title: "Hours", body: CONTACT.hours },
 ];
 
 export default function ContactPage() {
   return (
     <main>
-      <PageHeader crumb="Contact" title="Let's protect" highlight="your harvest.">
+      <PageHeader
+        crumb="Contact"
+        title="Let's protect"
+        highlight="your harvest."
+      >
         Tell us about your farm or cooperative and we&apos;ll put together a
-        transparent quote — usually within one working day.
+        transparent quote usually within one working day.
       </PageHeader>
 
-      <section className="section pt-1">
+      <section className="pb-[clamp(32px,4vw,56px)] pt-1">
         <Container className="grid grid-cols-1 items-start gap-[30px] lg:grid-cols-[1.15fr_.85fr]">
           {/* Form */}
           <Reveal>
@@ -44,18 +58,18 @@ export default function ContactPage() {
                       <Icon className="h-[22px] w-[22px]" />
                     </span>
                     <div>
-                      <h4 className="mb-0.5 font-display text-[15px] text-ink">
+                      <h4 className="mb-0.5 font-display text-[13.5px] text-ink">
                         {item.title}
                       </h4>
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-[14.5px] text-muted transition-colors hover:text-green-600"
+                          className="text-[13px] text-muted transition-colors hover:text-green-600"
                         >
                           {item.body}
                         </a>
                       ) : (
-                        <p className="text-[14.5px] text-muted">{item.body}</p>
+                        <p className="text-[13px] text-muted">{item.body}</p>
                       )}
                     </div>
                   </div>
@@ -72,16 +86,32 @@ export default function ContactPage() {
                 innerClassName="p-[26px]"
               >
                 <div>
-                  <span className="inline-flex items-center rounded-pill border border-white/[.34] bg-white/[.12] px-3.5 py-1.5 font-display text-xs font-semibold text-white backdrop-blur-[12px]">
+                  <span className="inline-flex items-center rounded-pill border border-white/[.34] bg-white/[.12] px-3.5 py-1.5 font-display text-[11px] font-semibold text-white backdrop-blur-[12px]">
                     24 field offices nationwide
                   </span>
-                  <p className="mt-3 font-display text-[17px] font-semibold text-white">
+                  <p className="mt-3 font-display text-[15px] font-semibold text-white">
                     An advisor is never far from your farm.
                   </p>
                 </div>
               </Band>
             </Reveal>
           </div>
+        </Container>
+      </section>
+
+      {/* Map */}
+      <section className="pt-0 mb-10">
+        <Container>
+          <Reveal className="overflow-hidden rounded-sm border border-mist-200 shadow-sm">
+            <iframe
+              title="Agricom Assurance office location"
+              src="https://www.google.com/maps?q=Accra,Ghana&output=embed"
+              className="block h-[clamp(420px,55vw,640px)] w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </Reveal>
         </Container>
       </section>
     </main>

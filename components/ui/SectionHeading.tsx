@@ -27,9 +27,9 @@ export default function SectionHeading({
       } ${className}`}
     >
       {eyebrow && <Eyebrow center={center}>{eyebrow}</Eyebrow>}
-      <h2 className="mt-3.5 text-[clamp(30px,4vw,52px)] font-bold">{title}</h2>
+      <h2 className="mt-3.5 text-[clamp(24px,3.2vw,42px)] font-bold">{title}</h2>
       {children && (
-        <p className="mt-[18px] max-w-[62ch] text-[clamp(17px,1.4vw,20px)] text-body">
+        <p className="mt-[18px] max-w-[62ch] text-[clamp(15px,1.25vw,18px)] text-body">
           {children}
         </p>
       )}

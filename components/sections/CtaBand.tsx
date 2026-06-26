@@ -24,12 +24,12 @@ export default function CtaBand({
   text,
   image,
   imageAlt = "",
-  primary = { label: "Get a free quote", href: "/contact" },
+  primary = { label: "Get Started", href: "/contact" },
   secondary,
-  titleClassName = "text-[clamp(30px,4.5vw,58px)]",
+  titleClassName = "text-[clamp(24px,3.6vw,47px)]",
 }: CtaBandProps) {
   return (
-    <section className="section pt-0">
+    <section className="py-[clamp(56px,9vw,120px)]">
       <Container>
         <Reveal>
           <Band
@@ -48,7 +48,7 @@ export default function CtaBand({
               {title}
             </h2>
             {text && (
-              <p className="mx-auto mt-[18px] max-w-[58ch] text-[clamp(17px,1.4vw,20px)] text-white/[.85]">
+              <p className="mx-auto mt-[18px] max-w-[58ch] text-[clamp(15px,1.25vw,18px)] text-white/[.85]">
                 {text}
               </p>
             )}

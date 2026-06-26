@@ -20,12 +20,10 @@ export default function Navbar() {
         {/* Brand */}
         <Link
           href="/"
-          className="flex items-center gap-3 font-display text-[18px] font-bold tracking-[-.01em] text-green-700"
+          className="flex items-center gap-3 font-display text-[16px] font-bold tracking-[-.01em] text-green-700"
           onClick={() => setOpen(false)}
         >
-          <span className="grid h-[38px] w-[38px] flex-none place-items-center rounded-[12px] bg-gradient-to-br from-green-500 to-green-700 shadow-glow">
-            <Logo className="h-[22px] w-[22px]" />
-          </span>
+          <Logo className="h-[38px] w-[38px] flex-none object-contain" />
           Agricom Assurance
         </Link>
 
@@ -42,7 +40,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className={`rounded-pill px-[15px] py-[9px] font-display text-[14.5px] transition-colors max-lg:px-4 max-lg:py-3.5 max-lg:text-base ${
+              className={`rounded-pill px-[15px] py-[9px] font-display text-[13px] transition-colors max-lg:px-4 max-lg:py-3.5 max-lg:text-[14.5px] ${
                 isActive(link.href)
                   ? "bg-green-500/[.12] font-semibold text-green-700"
                   : "font-medium text-ink-soft hover:bg-green-500/[.08] hover:text-green-700"
@@ -56,7 +54,7 @@ export default function Navbar() {
         {/* CTA + burger */}
         <div className="flex items-center gap-2.5">
           <Button href="/contact" className="max-lg:hidden">
-            Get a Quote
+            Get Started
           </Button>
           <button
             type="button"

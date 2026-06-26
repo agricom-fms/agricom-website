@@ -20,12 +20,12 @@ export default function ServiceCard({ icon, title, desc, href }: ServiceCardProp
       {/* left ribbon */}
       <span className="absolute inset-y-0 left-0 w-1 origin-top scale-y-0 rounded bg-gradient-to-b from-green-500 to-lime-400 transition-transform duration-300 group-hover:scale-y-100" />
       <FeatureIcon icon={icon} className="mb-5" />
-      <h3 className="mb-2.5 text-[21px]">{title}</h3>
-      <p className="text-[15px] text-muted">{desc}</p>
+      <h3 className="mb-2.5 text-[19px]">{title}</h3>
+      <p className="text-[13.5px] text-muted">{desc}</p>
       {href && (
         <Link
           href={href}
-          className="mt-[18px] inline-flex items-center gap-[7px] font-display text-sm font-semibold text-green-600"
+          className="mt-[18px] inline-flex items-center gap-[7px] font-display text-[12.5px] font-semibold text-green-600"
         >
           Explore cover
           <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />

@@ -21,11 +21,16 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Agricom Assurance — AgriTech Insurance for a Resilient Harvest",
-    template: "%s — Agricom Assurance",
+    default: "Agricom Assurance AgriTech Insurance for a Resilient Harvest",
+    template: "%s Agricom Assurance",
   },
   description:
-    "Agricom Assurance protects farmers, agribusinesses and rural communities with transparent, technology-driven cover — from seed to harvest and beyond.",
+    "Agricom Assurance protects farmers, agribusinesses and rural communities with transparent, technology-driven cover from seed to harvest and beyond.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

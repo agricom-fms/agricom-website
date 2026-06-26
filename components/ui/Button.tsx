@@ -14,8 +14,8 @@ const VARIANTS = {
 } as const;
 
 const SIZES = {
-  md: "px-[26px] py-3.5 text-[15px]",
-  lg: "px-8 py-[17px] text-base",
+  md: "px-[21px] py-3 text-[13px]",
+  lg: "px-[26px] py-3.5 text-[13.5px]",
 } as const;
 
 type ButtonVariant = keyof typeof VARIANTS;

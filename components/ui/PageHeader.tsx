@@ -23,7 +23,7 @@ export default function PageHeader({
     <section className="relative px-0 pb-[60px] pt-[170px]">
       <Container>
         <Reveal
-          className="mb-[18px] flex items-center gap-2 font-display text-[13.5px] font-medium text-muted"
+          className="mb-[18px] flex items-center gap-2 font-display text-[12px] font-medium text-muted"
         >
           <Link href="/" className="transition-colors hover:text-green-600">
             Home
@@ -33,14 +33,14 @@ export default function PageHeader({
         </Reveal>
         <Reveal
           as="h1"
-          className="max-w-[16ch] text-[clamp(40px,6vw,76px)] font-extrabold"
+          className="max-w-[16ch] text-[clamp(32px,4.8vw,61px)] font-extrabold"
         >
           {title} {highlight && <span className="text-grad">{highlight}</span>}
         </Reveal>
         {children && (
           <Reveal
             delay={80}
-            className="mt-5 max-w-[62ch] text-[clamp(17px,1.4vw,20px)] text-body"
+            className="mt-5 max-w-[62ch] text-[clamp(15px,1.25vw,18px)] text-body"
           >
             {children}
           </Reveal>

@@ -16,14 +16,14 @@ export default function WhyUs() {
             innerClassName="p-[clamp(38px,6vw,72px)]"
           >
             <div className="grid grid-cols-1 items-center gap-[50px] lg:grid-cols-[1.1fr_1fr]">
-              <div>
+              <div className="min-w-0">
                 <Eyebrow className="!text-lime-300">Why Agricom</Eyebrow>
-                <h2 className="mt-3.5 text-[clamp(28px,3.6vw,46px)] text-white">
+                <h2 className="mt-3.5 text-[clamp(22px,2.9vw,37px)] text-white">
                   Technology that turns uncertainty into resilience.
                 </h2>
-                <p className="mt-[18px] max-w-[62ch] text-[clamp(17px,1.4vw,20px)] text-white/[.85]">
+                <p className="mt-[18px] max-w-[62ch] text-[clamp(15px,1.25vw,18px)] text-white/[.85]">
                   We pair on-the-ground agronomists with satellite imagery and
-                  automated weather triggers — so cover is fair, claims are
+                  automated weather triggers so cover is fair, claims are
                   fast, and farmers stay planted through whatever the season
                   brings.
                 </p>
@@ -36,13 +36,13 @@ export default function WhyUs() {
                   Our story
                 </Button>
               </div>
-              <div className="grid gap-3.5">
+              <div className="grid min-w-0 gap-3.5">
                 {WHY_US.map((item) => (
                   <div key={item.title} className="glass-dark px-6 py-[22px]">
-                    <b className="mb-1.5 block font-display text-[17px] text-white">
+                    <b className="mb-1.5 block font-display text-[15px] text-white">
                       {item.title}
                     </b>
-                    <span className="text-[14.5px] text-[#EAF6EA]/80">
+                    <span className="text-[13px] text-[#EAF6EA]/80">
                       {item.desc}
                     </span>
                   </div>

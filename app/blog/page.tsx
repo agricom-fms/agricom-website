@@ -1,20 +1,19 @@
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
-import ProjectGrid from "@/components/sections/ProjectGrid";
+import BlogGrid from "@/components/sections/BlogGrid";
 import CtaBand from "@/components/sections/CtaBand";
 
-export default function PortfolioPage() {
+export default function BlogPage() {
   return (
     <main>
-      <PageHeader crumb="Portfolio" title="Cover in action," highlight="season after season.">
-        Real cooperatives, real payouts, real harvests saved. Explore a
-        selection of the programmes we&apos;ve delivered across crops, livestock
-        and agribusiness.
+      <PageHeader crumb="Blog" title="Field notes," highlight="season after season.">
+        Stories, results and lessons from the cooperatives we work with across
+        crops and agribusiness. Real payouts, real harvests saved.
       </PageHeader>
 
       <section className="section pt-1">
         <Container>
-          <ProjectGrid />
+          <BlogGrid />
         </Container>
       </section>
 
@@ -22,8 +21,8 @@ export default function PortfolioPage() {
         title="Your cooperative could be the next success story."
         image="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1700&q=80&auto=format&fit=crop"
         imageAlt="Farmers"
-        titleClassName="max-w-[18ch] text-[clamp(28px,4vw,52px)]"
-        primary={{ label: "Start your programme", href: "/contact" }}
+        titleClassName="max-w-[18ch] text-[clamp(22px,3.2vw,42px)]"
+        primary={{ label: "Get Started", href: "/contact" }}
       />
     </main>
   );

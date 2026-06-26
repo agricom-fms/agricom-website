@@ -1,5 +1,5 @@
 import Hero from "@/components/sections/Hero";
-import TrustStrip from "@/components/sections/TrustStrip";
+import Partners from "@/components/sections/Partners";
 import ServicesPreview from "@/components/sections/ServicesPreview";
 import WhyUs from "@/components/sections/WhyUs";
 import HowItWorks from "@/components/sections/HowItWorks";
@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <TrustStrip />
+      <Partners />
       <ServicesPreview />
       <WhyUs />
       <HowItWorks />
@@ -21,7 +21,7 @@ export default function HomePage() {
         text="Get a transparent quote in minutes. No paperwork, no jargon."
         image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1700&q=80&auto=format&fit=crop"
         imageAlt="Golden fields at sunset"
-        primary={{ label: "Get a free quote", href: "/contact" }}
+        primary={{ label: "Get Started", href: "/contact" }}
         secondary={{ label: "Browse all services", href: "/services" }}
       />
     </main>

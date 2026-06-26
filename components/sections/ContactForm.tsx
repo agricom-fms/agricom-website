@@ -6,9 +6,7 @@ import { ArrowRight, Check } from "@/components/icons";
 
 const INTERESTS = [
   "Crop Insurance",
-  "Livestock Cover",
   "Weather-Index Insurance",
-  "Equipment & Asset",
   "Agribusiness Cover",
   "Mobile Microcover",
 ];
@@ -32,8 +30,8 @@ export default function ContactForm() {
 
   return (
     <div className="glass p-[clamp(28px,4vw,46px)]">
-      <h2 className="text-[clamp(22px,2.4vw,30px)]">Request a quote</h2>
-      <p className="mt-2 text-[15px] text-muted">
+      <h2 className="text-[clamp(18px,1.95vw,24px)]">Request a quote</h2>
+      <p className="mt-2 text-[13.5px] text-muted">
         Fields marked with an asterisk (*) are required.
       </p>
 
@@ -76,7 +74,7 @@ export default function ContactForm() {
 
         <Field label="Tell us about your operation">
           <textarea
-            placeholder="Crops or livestock, location, what you'd like to protect…"
+            placeholder="Crops, location, what you'd like to protect…"
             className="field-input min-h-[130px] resize-y"
           />
         </Field>
@@ -87,9 +85,9 @@ export default function ContactForm() {
         </Button>
 
         {sent && (
-          <div className="flex items-center gap-2.5 rounded-md border border-green-500/35 bg-green-500/[.12] px-[18px] py-3.5 font-display text-[14.5px] font-semibold text-green-700">
+          <div className="flex items-center gap-2.5 rounded-md border border-green-500/35 bg-green-500/[.12] px-[18px] py-3.5 font-display text-[13px] font-semibold text-green-700">
             <Check className="h-[18px] w-[18px]" />
-            Thanks — we&apos;ve received your request and an advisor will be in
+            Thanks we&apos;ve received your request and an advisor will be in
             touch shortly.
           </div>
         )}
@@ -106,7 +104,7 @@ interface FieldProps {
 function Field({ label, children }: FieldProps) {
   return (
     <label className="flex flex-col gap-2">
-      <span className="font-display text-[13.5px] font-semibold text-ink-soft">
+      <span className="font-display text-[12px] font-semibold text-ink-soft">
         {label}
       </span>
       {children}

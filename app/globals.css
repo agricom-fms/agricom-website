@@ -27,6 +27,12 @@
 }
 
 @layer components {
+  /* Vertical rhythm for page sections. Stacked sections override the top
+     with `pt-0` / `pt-*` utilities so gaps don't double up. */
+  .section {
+    padding-block: clamp(56px, 9vw, 120px);
+  }
+
   /* Container / page gutter — mirrors the original --gut clamp */
   .wrap {
     @apply mx-auto w-full max-w-wrap;
@@ -60,7 +66,7 @@
 
   /* Form fields */
   .field-input {
-    @apply w-full rounded-md border border-mist-200 bg-white/70 px-4 py-3.5 text-[15px] text-ink outline-none transition-colors;
+    @apply w-full rounded-md border border-mist-200 bg-white/70 px-4 py-3.5 text-[13.5px] text-ink outline-none transition-colors;
     font-family: var(--font-jakarta);
   }
   .field-input::placeholder {

@@ -55,11 +55,11 @@ const config: Config = {
         pill: "999px",
       },
       boxShadow: {
-        sm: "0 2px 8px rgba(10,53,39,.08)",
-        md: "0 12px 34px -12px rgba(10,53,39,.28)",
-        lg: "0 30px 70px -24px rgba(8,34,24,.45)",
-        glow: "0 18px 50px -18px rgba(21,160,69,.55)",
-        "glow-hover": "0 24px 60px -18px rgba(21,160,69,.7)",
+        sm: "0 1px 3px rgba(10,53,39,.04)",
+        md: "0 6px 18px -14px rgba(10,53,39,.12)",
+        lg: "0 14px 38px -26px rgba(8,34,24,.20)",
+        glow: "0 8px 24px -18px rgba(21,160,69,.24)",
+        "glow-hover": "0 12px 32px -18px rgba(21,160,69,.32)",
       },
       maxWidth: {
         wrap: "1200px",
@@ -72,6 +72,13 @@ const config: Config = {
           from: { opacity: "0", transform: "translateY(26px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 32s linear infinite",
       },
     },
   },

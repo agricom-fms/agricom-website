@@ -32,8 +32,8 @@ export default function FeatureRow({
   const Copy = (
     <div className="p-[clamp(30px,4vw,52px)]">
       <FeatureIcon icon={icon} className="mb-5" />
-      <h2 className="text-[clamp(26px,3vw,38px)]">{title}</h2>
-      <p className="mt-3.5 max-w-[62ch] text-[clamp(17px,1.4vw,20px)] text-body">{desc}</p>
+      <h2 className="text-[clamp(21px,2.4vw,31px)]">{title}</h2>
+      <p className="mt-3.5 max-w-[62ch] text-[clamp(15px,1.25vw,18px)] text-body">{desc}</p>
       {chips.length > 0 && (
         <div className="mt-[26px] flex flex-wrap gap-2.5">
           {chips.map((c) => (

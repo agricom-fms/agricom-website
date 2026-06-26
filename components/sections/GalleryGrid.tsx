@@ -63,7 +63,7 @@ export default function GalleryGrid() {
               height={650}
               className="w-full transition-transform duration-[.6s] ease-smooth group-hover:scale-[1.06]"
             />
-            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-[linear-gradient(transparent,rgba(6,35,26,.78))] px-4 pb-3.5 pt-[30px] font-display text-sm font-semibold text-white opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
+            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-[linear-gradient(transparent,rgba(6,35,26,.78))] px-4 pb-3.5 pt-[30px] font-display text-[12.5px] font-semibold text-white opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
               {shot.caption}
             </figcaption>
           </figure>
@@ -80,7 +80,7 @@ export default function GalleryGrid() {
             type="button"
             aria-label="Close"
             onClick={() => setLightbox(null)}
-            className="absolute right-7 top-6 grid h-12 w-12 place-items-center rounded-full border border-white/40 bg-white/[.14] text-[22px] text-white backdrop-blur-[10px] transition hover:bg-white/[.28]"
+            className="absolute right-7 top-6 grid h-12 w-12 place-items-center rounded-full border border-white/40 bg-white/[.14] text-[20px] text-white backdrop-blur-[10px] transition hover:bg-white/[.28]"
           >
             ✕
           </button>

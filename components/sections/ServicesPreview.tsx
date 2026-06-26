@@ -13,7 +13,7 @@ export default function ServicesPreview() {
           eyebrow="What we cover"
           title="Protection for every stage of the growing cycle."
         >
-          Modular policies built around real agricultural risk — backed by
+          Modular policies built around real agricultural risk backed by
           satellite data, weather indices and a claims process you can actually
           trust.
         </SectionHeading>
