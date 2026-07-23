@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
 
 interface PageHeaderProps {
-  crumb: string;
+  crumb: React.ReactNode;
   title: string;
   highlight?: string;
   children?: ReactNode;

@@ -54,7 +54,7 @@ export default function Navbar() {
         {/* CTA + burger */}
         <div className="flex items-center gap-2.5">
           <Button href="/contact" className="max-lg:hidden">
-            Get Started
+            Book A Demo
           </Button>
           <button
             type="button"

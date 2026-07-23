@@ -23,6 +23,7 @@ interface IconCard {
 interface ServiceFeature extends IconCard {
   chips: string[];
   cta: string;
+  href?: string;
   image: string;
   imageAlt: string;
   reverse: boolean;
@@ -334,9 +335,8 @@ export const TEAM = [
   },
 ];
 
-// Blog
 /** Format an ISO date string as e.g. "18 May 2026". */
-export function formatDate(iso: string): string {
+export function formatDate(iso: string | Date): string {
   return new Date(iso).toLocaleDateString("en-GB", {
     day: "numeric",
     month: "long",

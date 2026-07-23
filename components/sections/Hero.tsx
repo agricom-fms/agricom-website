@@ -31,7 +31,7 @@ export default function Hero() {
           </div>
 
           <h1 className="max-w-[15ch] text-[clamp(36px,5.2vw,70px)] font-extrabold text-white">
-            Insurance that grows <span className="text-grad">with the land.</span>
+            Building Climate Resilience Through <span className="text-grad">Insurance, Technology & Financial Inclusion.</span>
           </h1>
 
           <p className="mt-[22px] max-w-[52ch] text-[clamp(15px,1.35vw,19px)] text-white/[.86]">
@@ -42,11 +42,11 @@ export default function Hero() {
 
           <div className="mt-[38px] flex flex-wrap gap-3.5">
             <Button href="/services" size="lg">
-              Discover our cover
+              Request A Demo
               <ArrowRight />
             </Button>
             <Button href="/contact" size="lg" variant="ghost-light">
-              Talk to an advisor
+              Discover our cover
             </Button>
           </div>
 
