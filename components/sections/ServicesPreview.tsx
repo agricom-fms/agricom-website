@@ -24,7 +24,7 @@ export default function ServicesPreview() {
                 icon={ICONS[service.icon]}
                 title={service.title}
                 desc={service.desc}
-                href="/services"
+                href={service.href || "/products"}
               />
             </Reveal>
           ))}

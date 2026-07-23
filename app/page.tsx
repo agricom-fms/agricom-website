@@ -22,7 +22,7 @@ export default function HomePage() {
         image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1700&q=80&auto=format&fit=crop"
         imageAlt="Golden fields at sunset"
         primary={{ label: "Get Started", href: "/contact" }}
-        secondary={{ label: "Browse all services", href: "/services" }}
+        secondary={{ label: "Browse all products", href: "/products" }}
       />
     </main>
   );

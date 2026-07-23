@@ -11,7 +11,7 @@ import { ICONS } from "@/components/icons";
 export default function ServicesPage() {
   return (
     <main>
-      <PageHeader crumb="Services" title="Cover for every acre, herd" highlight="and harvest.">
+      <PageHeader crumb="Products" title="Cover for every acre, herd" highlight="and harvest.">
         Modular agricultural insurance built on real risk data. Mix and match
         the protection your operation needs from a single smallholder plot to a
         regional cooperative.

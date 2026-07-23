@@ -32,7 +32,7 @@ export default function FeatureRow({
   reverse,
 }: FeatureRowProps) {
   const Copy = (
-    <div className="p-[clamp(30px,4vw,52px)]">
+    <div className="flex h-full flex-col justify-center p-[clamp(30px,4vw,52px)] lg:min-h-[480px]">
       <FeatureIcon icon={icon} className="mb-5" />
       <h2 className="text-[clamp(21px,2.4vw,31px)]">{title}</h2>
       <p className="mt-3.5 max-w-[62ch] text-[clamp(15px,1.25vw,18px)] text-body">{desc}</p>
@@ -43,14 +43,14 @@ export default function FeatureRow({
           ))}
         </div>
       )}
-      <Button href={href} className="mt-11">
-        {cta}
-      </Button>
+      <div className="mt-auto pt-11">
+        <Button href={href}>{cta}</Button>
+      </div>
     </div>
   );
 
   const Media = (
-    <div className="relative min-h-[300px]">
+    <div className="relative min-h-[300px] h-full">
       <Image
         src={image}
         alt={imageAlt}
