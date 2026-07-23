@@ -6,21 +6,23 @@ import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
 import Chip from "@/components/ui/Chip";
 import CtaBand from "@/components/sections/CtaBand";
-import { BLOG_POSTS, formatDate } from "@/lib/content";
+import { formatDate } from "@/lib/content";
+import { prisma } from "@/lib/db";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  return BLOG_POSTS.map((post) => ({ slug: post.slug }));
+export async function generateStaticParams() {
+  const posts = await prisma.blogPost.findMany({ select: { slug: true } });
+  return posts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = BLOG_POSTS.find((p) => p.slug === slug);
+  const post = await prisma.blogPost.findUnique({ where: { slug } });
 
   if (!post) return { title: "Post not found" };
 
@@ -32,7 +34,7 @@ export async function generateMetadata({
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
-  const post = BLOG_POSTS.find((p) => p.slug === slug);
+  const post = await prisma.blogPost.findUnique({ where: { slug } });
 
   if (!post) notFound();
 
@@ -77,7 +79,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             >
               <span>{post.author}</span>
               <span className="opacity-50">•</span>
-              <span>{formatDate(post.date)}</span>
+              <span>{formatDate(post.date.toISOString ? post.date.toISOString() : post.date)}</span>
               <span className="opacity-50">•</span>
               <span>{post.readTime}</span>
             </Reveal>
@@ -107,7 +109,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <p className="text-[clamp(16px,1.35vw,19px)] font-medium text-strong">
                 {post.desc}
               </p>
-              {post.body.map((paragraph, i) => (
+              {post.body.split("\n\n").map((paragraph, i) => (
                 <Reveal
                   key={i}
                   as="p"

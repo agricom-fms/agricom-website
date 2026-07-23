@@ -10,6 +10,7 @@ interface FeatureRowProps {
   desc: string;
   chips?: string[];
   cta: string;
+  href?: string;
   image: string;
   imageAlt: string;
   reverse?: boolean;
@@ -25,6 +26,7 @@ export default function FeatureRow({
   desc,
   chips = [],
   cta,
+  href = "/contact",
   image,
   imageAlt,
   reverse,
@@ -41,7 +43,7 @@ export default function FeatureRow({
           ))}
         </div>
       )}
-      <Button href="/contact" className="mt-11">
+      <Button href={href} className="mt-11">
         {cta}
       </Button>
     </div>

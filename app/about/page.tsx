@@ -7,6 +7,7 @@ import PageHeader from "@/components/ui/PageHeader";
 import Band from "@/components/ui/Band";
 import Button from "@/components/ui/Button";
 import FeatureIcon from "@/components/ui/FeatureIcon";
+import TeamCarousel from "@/components/ui/TeamCarousel";
 import { ABOUT_STATS, TEAM } from "@/lib/content";
 import {
   Crop,
@@ -206,34 +207,10 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             center
-            eyebrow="The people"
-            title="Agronomists, actuaries & engineers."
+            eyebrow="Meet ur Team"
+            title="Our dedicated team"
           />
-          <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2 lg:grid-cols-4">
-            {TEAM.map((member, index) => (
-              <Reveal
-                key={member.name}
-                delay={(index % 4) * 80}
-                className="overflow-hidden rounded-lg border border-mist-200 bg-white shadow-sm transition-[transform,box-shadow] duration-300 ease-smooth hover:-translate-y-1.5 hover:shadow-md"
-              >
-                <div className="aspect-square overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={400}
-                    height={400}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="text-[16px]">{member.name}</h3>
-                  <p className="font-display text-[12.5px] font-semibold text-green-600">
-                    {member.role}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <TeamCarousel team={TEAM} />
         </Container>
       </section>
 

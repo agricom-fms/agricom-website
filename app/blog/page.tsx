@@ -2,8 +2,13 @@ import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import BlogGrid from "@/components/sections/BlogGrid";
 import CtaBand from "@/components/sections/CtaBand";
+import { prisma } from "@/lib/db";
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await prisma.blogPost.findMany({
+    orderBy: { date: "desc" },
+  });
+
   return (
     <main>
       <PageHeader crumb="Blog" title="Field notes," highlight="season after season.">
@@ -13,7 +18,7 @@ export default function BlogPage() {
 
       <section className="section pt-1">
         <Container>
-          <BlogGrid />
+          <BlogGrid posts={posts} />
         </Container>
       </section>
 

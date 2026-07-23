@@ -5,12 +5,16 @@ import Link from "next/link";
 import { useState } from "react";
 import Reveal from "@/components/ui/Reveal";
 import Chip from "@/components/ui/Chip";
-import { BLOG_FILTERS, BLOG_POSTS, formatDate } from "@/lib/content";
+import { BLOG_FILTERS, formatDate } from "@/lib/content";
 
-export default function BlogGrid() {
+interface BlogGridProps {
+  posts: any[];
+}
+
+export default function BlogGrid({ posts }: BlogGridProps) {
   const [filter, setFilter] = useState<string>("all");
 
-  const visible = BLOG_POSTS.filter(
+  const visible = posts.filter(
     (p) => filter === "all" || p.cat.includes(filter)
   );
 
@@ -57,7 +61,7 @@ export default function BlogGrid() {
                 </h3>
                 <p className="mt-2 text-[13px] text-muted">{post.desc}</p>
                 <div className="mt-4 flex items-center gap-2 font-display text-[12px] text-muted">
-                  <span>{formatDate(post.date)}</span>
+                  <span>{formatDate(post.date.toISOString ? post.date.toISOString() : post.date)}</span>
                   <span className="opacity-50">•</span>
                   <span>{post.readTime}</span>
                 </div>
