@@ -340,28 +340,46 @@ export const ABOUT_STATS = [
 
 export const TEAM = [
   {
-    name: "Amara Okonkwo",
-    role: "Chief Agronomist",
+    name: "Derric Awumey",
+    role: "Founder & CEO",
     image:
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/derric-awumey" },
   },
   {
-    name: "Daniel Mensah",
+    name: "Daniel Arhin Oduro",
     role: "Head of Claims",
     image:
       "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/daniel-arhin-oduro" },
   },
   {
-    name: "Fatima Sani",
-    role: "Data & Satellite Lead",
+    name: "Christopher Dzorkpui",
+    role: "Chief Technology Officer",
     image:
       "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/christopher-dzorkpui" },
   },
   {
-    name: "Joseph Adeyemi",
-    role: "Field Network Director",
+    name: "Albert Osei",
+    role: "HR & AI Lead",
     image:
       "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/albert-osei" },
+  },
+  {
+    name: "Seth Ketsi",
+    role: "Head of Operations & Product Lead",
+    image:
+      "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/albert-osei" },
+  },
+  {
+    name: "Maxwell ",
+    role: "Head of Designs",
+    image:
+      "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/albert-osei" },
   },
 ];
 
