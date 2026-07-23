@@ -47,8 +47,8 @@ export default function PlatformPage() {
       <PageHeader
         crumb={
           <>
-            <Link href="/services" className="transition-colors hover:text-green-600">
-              Services
+            <Link href="/products" className="transition-colors hover:text-green-600">
+              Products
             </Link>
             <span className="opacity-50">/</span>
             <span>Agricom Platform</span>

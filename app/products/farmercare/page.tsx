@@ -6,7 +6,7 @@ import PageHeader from "@/components/ui/PageHeader";
 import CtaBand from "@/components/sections/CtaBand";
 import FeatureIcon from "@/components/ui/FeatureIcon";
 import Accordion from "@/components/ui/Accordion";
-import { ShieldCheck, Users } from "@/components/icons";
+import { Users, ShieldCheck } from "@/components/icons";
 
 const BENEFITS = [
   "Flexible retirement savings",
@@ -14,14 +14,6 @@ const BENEFITS = [
   "Life Protection",
   "Long-term financial security",
   "Easy mobile access",
-];
-
-const HOW_IT_WORKS = [
-  "Dial *920*78# to register.",
-  "Create your FarmerCare account.",
-  "Make flexible contributions at your convenience.",
-  "Track your savings and benefits digitally.",
-  "Build a secure retirement while enjoying additional protection along the way.",
 ];
 
 const WHO_IS_IT_FOR = [
@@ -33,27 +25,35 @@ const WHO_IS_IT_FOR = [
   "Agricultural Value Chain Participants",
 ];
 
-const FAQ_ITEMS = [
+const HOW_IT_WORKS = [
+  "Dial *920*78# to register.",
+  "Create your FarmerCare account.",
+  "Make flexible contributions at your convenience.",
+  "Track your savings and benefits digitally.",
+  "Build a secure retirement while enjoying additional protection along the way.",
+];
+
+const FAQS = [
   {
     question: "How do I register?",
-    answer: "Dial *920*78# to register directly from your mobile phone, or visit any of our partner cooperatives."
+    answer: "You can easily register by dialing *920*78# on your mobile phone and following the prompts to create your FarmerCare account.",
   },
   {
     question: "How often can I contribute?",
-    answer: "You can contribute as often as you like based on your cash flow. There are no strict schedules, so you can adapt to seasonal incomes."
+    answer: "Contributions are entirely flexible. You can contribute whenever you have funds available, aligning perfectly with seasonal agricultural incomes.",
   },
   {
     question: "Can I save weekly or monthly?",
-    answer: "Yes, you have complete flexibility. You can save daily, weekly, monthly, or simply deposit a lump sum after harvest."
+    answer: "Yes, you can choose to save weekly, monthly, or at your own pace depending on what works best for your cash flow.",
   },
   {
     question: "Is my money secure?",
-    answer: "Absolutely. FarmerCare funds are managed in partnership with regulated and trusted financial institutions, ensuring your savings are fully protected."
+    answer: "Absolutely. FarmerCare is managed in partnership with regulated financial institutions and trusted partners to ensure your savings are fully protected and secure.",
   },
   {
     question: "How do I access my retirement benefits?",
-    answer: "You can securely access your benefits digitally through our platform or USSD menu once you reach the retirement threshold, or make partial withdrawals based on your policy terms."
-  }
+    answer: "You can track and manage your benefits digitally via USSD or the Agricom app. When eligible, you can initiate a withdrawal request which will be securely processed to your mobile money wallet or bank account.",
+  },
 ];
 
 export default function FarmerCarePage() {
@@ -62,17 +62,17 @@ export default function FarmerCarePage() {
       <PageHeader
         crumb={
           <>
-            <Link href="/services" className="transition-colors hover:text-green-600">
-              Services
+            <Link href="/products" className="transition-colors hover:text-green-600">
+              Products
             </Link>
             <span className="opacity-50">/</span>
-            <span>FarmerCare MicroPensions</span>
+            <span>FarmerCare</span>
           </>
         }
         title="Save Today."
         highlight="Retire with Dignity."
       >
-        FarmerCare is a flexible micro-pension solution designed for farmers and participants across the agricultural value chain.
+        Flexible micro-pension solution designed for farmers and participants across the agricultural value chain.
       </PageHeader>
 
       <section className="section pt-5">
@@ -123,33 +123,35 @@ export default function FarmerCarePage() {
 
       <section className="section pt-0">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Reveal className="rounded-xl border border-mist-200 bg-white p-[30px] shadow-sm">
-              <SectionHeading title="How It Works" eyebrow={""} />
-              <ul className="space-y-4 mt-6">
-                {HOW_IT_WORKS.map((item, i) => (
-                  <li key={i} className="flex items-start gap-4">
-                    <div className="flex-none w-8 h-8 rounded-full bg-green-100 text-green-700 flex items-center justify-center font-bold">
-                      {i + 1}
-                    </div>
-                    <span className="text-body pt-1">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
+          <Reveal className="glass p-[clamp(30px,5vw,50px)] mb-8">
+            <SectionHeading title="How It Works" eyebrow={""} />
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-6">
+              {HOW_IT_WORKS.map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-green-100 text-green-700 font-bold">
+                    {i + 1}
+                  </div>
+                  <span className="text-body text-lg mt-0.5">{item}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </Container>
+      </section>
 
-            <Reveal delay={100} className="rounded-xl border border-mist-200 bg-white p-[30px] shadow-sm">
-              <SectionHeading title="Frequently Asked Questions" eyebrow={""} />
-              <Accordion items={FAQ_ITEMS} />
-            </Reveal>
-          </div>
+      <section className="section pt-0">
+        <Container>
+          <Reveal className="rounded-xl border border-mist-200 bg-white p-[30px] shadow-sm">
+            <SectionHeading title="Frequently Asked Questions" eyebrow={""} />
+            <Accordion items={FAQS} />
+          </Reveal>
         </Container>
       </section>
 
       <CtaBand
         title="Secure your future."
         image="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1700&q=80&auto=format&fit=crop"
-        imageAlt="Farmer looking forward"
+        imageAlt="FarmerCare MicroPensions"
         primary={{ label: "Start Saving Today", href: "/contact" }}
       />
     </main>

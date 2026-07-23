@@ -41,7 +41,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-[38px] flex flex-wrap gap-3.5">
-            <Button href="/services" size="lg">
+            <Button href="/products" size="lg">
               Request A Demo
               <ArrowRight />
             </Button>

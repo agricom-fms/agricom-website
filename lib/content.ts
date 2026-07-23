@@ -18,6 +18,7 @@ interface IconCard {
   icon: IconName;
   title: string;
   desc: string;
+  href?: string;
 }
 
 interface ServiceFeature extends IconCard {
@@ -32,19 +33,19 @@ interface ServiceFeature extends IconCard {
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
+  { href: "/products", label: "Products" },
   { href: "/blog", label: "Blog" },
   // { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
 ];
 
 export const CONTACT = {
-  address: "12 Harvest Way, Victoria Island, Lagos, Nigeria",
-  addressShort: "12 Harvest Way, Lagos",
-  phone: "+234 800 000 0000",
-  phoneHref: "tel:+2348000000000",
-  email: "hello@agricomassurance.com",
-  hours: "Mon – Fri, 8:00 – 18:00 WAT",
+  address: "Ablekuma Curve - Accra",
+  addressShort: "Ablekuma Curve - Accra",
+  phone: "+233 534 493 357",
+  phoneHref: "tel:+23353449357",
+  email: "info@agricomassurance.com",
+  hours: "Mon – Fri, 8:00 – 18:00 GMT",
 };
 
 export const HERO_STATS = [
@@ -80,22 +81,26 @@ export const SERVICES: IconCard[] = [
   {
     icon: "crop",
     title: "Crop Insurance",
-    desc: "Multi-peril and yield-index cover that shields your harvest against drought, flooding, pests and disease.",
+    desc: "Protect your farm against drought, floods, pests, and other climate risks with our technology-driven insurance.",
+    href: "/products/crop-insurance",
   },
   {
-    icon: "weather",
-    title: "Weather-Index Insurance",
-    desc: "Automatic, parametric payouts triggered by rainfall and temperature data no lengthy assessments, no disputes.",
+    icon: "users",
+    title: "FarmerCare MicroPensions",
+    desc: "A flexible micro-pension and protection solution designed for farmers and informal sector workers to build financial security.",
+    href: "/products/farmercare",
   },
   {
-    icon: "agribusiness",
-    title: "Agribusiness Cover",
-    desc: "Revenue protection, supply-chain and credit-linked cover for cooperatives, mills and processors.",
+    icon: "globe",
+    title: "Agricom Platform",
+    desc: "Our digital platform helping insurers, agribusinesses, and financial institutions manage farmers more efficiently.",
+    href: "/products/agricom-platform",
   },
   {
-    icon: "mobile",
-    title: "Mobile Microcover",
-    desc: "Pay-as-you-grow policies for smallholders, managed entirely from a feature phone or our mobile app.",
+    icon: "input",
+    title: "Input Financing",
+    desc: "Access seeds, fertilizers, and other essential inputs at the beginning of the season and repay after harvest.",
+    href: "/products/input-financing",
   },
 ];
 
@@ -203,28 +208,53 @@ export const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-// Services page three feature rows
 export const SERVICE_FEATURES: ServiceFeature[] = [
   {
     icon: "crop",
     title: "Crop Insurance",
-    desc: "Multi-peril and yield-index cover that shields your harvest against drought, flooding, pests, fire and disease. Premiums scale to plot size and crop type, with payouts benchmarked to verified regional yields.",
-    chips: ["Maize & grains", "Tubers", "Horticulture", "Cash crops"],
-    cta: "Quote crop cover",
+    desc: "Protect your farm against drought, floods, excessive rainfall, pests, and other climate risks. Our technology-driven insurance combines satellite intelligence, weather data, and digital claims processing to help farmers recover quickly and continue farming with confidence.",
+    chips: ["Drought & flood protection", "Weather-index insurance", "Fast digital claims", "Satellite-based farm monitoring", "Affordable premiums"],
+    cta: "Learn More",
+    href: "/products/crop-insurance",
     image:
       "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1000&q=80&auto=format&fit=crop",
     imageAlt: "Crop field",
     reverse: false,
   },
   {
-    icon: "weather",
-    title: "Weather-Index Insurance",
-    desc: "Parametric cover with automatic payouts triggered by rainfall and temperature thresholds. No loss adjusters, no lengthy assessments, no disputes when the data crosses the line, you get paid.",
-    chips: ["Rainfall index", "Drought trigger", "Heat stress"],
-    cta: "Get Started",
+    icon: "users",
+    title: "FarmerCare MicroPensions",
+    desc: "FarmerCare is a flexible micro-pension and protection solution designed for farmers and informal sector workers. Save small amounts at your own pace while building long-term financial security and accessing valuable protection benefits.",
+    chips: ["Flexible contributions", "Retirement savings", "Hospital cash support", "Life protection", "Financial security for the future"],
+    cta: "Learn More",
+    href: "/products/farmercare",
     image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1000&q=80&auto=format&fit=crop",
-    imageAlt: "Weather over fields",
+      "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1000&q=80&auto=format&fit=crop",
+    imageAlt: "FarmerCare MicroPensions",
+    reverse: true,
+  },
+  {
+    icon: "globe",
+    title: "Agricom Platform",
+    desc: "Our digital platform helps insurers, governments, agribusinesses, NGOs, cooperatives, and financial institutions manage farmers more efficiently. From digital farmer registration and geospatial mapping to climate intelligence, insurance management, and analytics, everything is available in one powerful platform.",
+    chips: ["Farmer registration & profiling", "GPS & farm mapping", "Climate intelligence dashboard", "Insurance & claims management", "Real-time analytics & reporting", "API integrations"],
+    cta: "Learn More",
+    href: "/products/agricom-platform",
+    image:
+      "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1000&q=80&auto=format&fit=crop",
+    imageAlt: "Agricom Platform",
+    reverse: false,
+  },
+  {
+    icon: "input",
+    title: "Input Financing",
+    desc: "Quality farm inputs shouldn't be out of reach because of cash flow. Through our input financing solution, farmers can access seeds, fertilizers, agrochemicals, and other essential inputs at the beginning of the season and repay after harvest.",
+    chips: ["Buy now, pay after harvest", "Affordable repayment plans", "Access to quality farm inputs", "Increased productivity", "Improved farm profitability"],
+    cta: "Learn More",
+    href: "/products/input-financing",
+    image:
+      "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=1000&q=80&auto=format&fit=crop",
+    imageAlt: "Input Financing",
     reverse: true,
   },
 ];
@@ -310,28 +340,46 @@ export const ABOUT_STATS = [
 
 export const TEAM = [
   {
-    name: "Amara Okonkwo",
-    role: "Chief Agronomist",
+    name: "Derric Awumey",
+    role: "Founder & CEO",
     image:
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/derric-awumey" },
   },
   {
-    name: "Daniel Mensah",
+    name: "Daniel Arhin Oduro",
     role: "Head of Claims",
     image:
       "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/daniel-arhin-oduro" },
   },
   {
-    name: "Fatima Sani",
-    role: "Data & Satellite Lead",
+    name: "Christopher Dzorkpui",
+    role: "Chief Technology Officer",
     image:
       "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/christopher-dzorkpui" },
   },
   {
-    name: "Joseph Adeyemi",
-    role: "Field Network Director",
+    name: "Albert Osei",
+    role: "HR & AI Lead",
     image:
       "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/albert-osei" },
+  },
+  {
+    name: "Seth Ketsi",
+    role: "Head of Operations & Product Lead",
+    image:
+      "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/albert-osei" },
+  },
+  {
+    name: "Maxwell ",
+    role: "Head of Designs",
+    image:
+      "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80&auto=format&fit=crop",
+    socials: { linkedin: "https://www.linkedin.com/in/albert-osei" },
   },
 ];
 
@@ -556,11 +604,11 @@ export const GALLERY = [
 
 export const FOOTER_COLUMNS = [
   {
-    heading: "Services",
+    heading: "Products",
     links: [
-      { label: "Crop Insurance", href: "/services" },
-      { label: "Weather-Index", href: "/services" },
-      { label: "Agribusiness", href: "/services" },
+      { label: "Crop Insurance", href: "/products" },
+      { label: "Weather-Index", href: "/products" },
+      { label: "Agribusiness", href: "/products" },
     ],
   },
   {

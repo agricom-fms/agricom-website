@@ -207,8 +207,8 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             center
-            eyebrow="Meet ur Team"
-            title="Our dedicated team"
+            eyebrow="Meet The Team"
+            title="Meet the people behind Agricom"
           />
           <TeamCarousel team={TEAM} />
         </Container>
