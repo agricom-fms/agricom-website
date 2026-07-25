@@ -8,13 +8,14 @@ interface ServiceCardProps {
   title: string;
   desc: string;
   href?: string;
+  ctaText?: string;
 }
 
 /**
  * Service / feature card with hover lift, left ribbon accent and optional
  * "Explore cover" link.
  */
-export default function ServiceCard({ icon, title, desc, href }: ServiceCardProps) {
+export default function ServiceCard({ icon, title, desc, href, ctaText }: ServiceCardProps) {
   return (
     <article className="group relative overflow-hidden rounded-lg border border-mist-200 bg-white p-[30px] shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-smooth hover:-translate-y-1.5 hover:border-green-500/40 hover:shadow-md">
       {/* left ribbon */}
@@ -27,7 +28,7 @@ export default function ServiceCard({ icon, title, desc, href }: ServiceCardProp
           href={href}
           className="mt-[18px] inline-flex items-center gap-[7px] font-display text-[12.5px] font-semibold text-green-600"
         >
-          Explore cover
+          {ctaText || "Explore cover"}
           <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Link>
       )}

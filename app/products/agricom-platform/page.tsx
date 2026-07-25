@@ -51,11 +51,11 @@ export default function PlatformPage() {
               Products
             </Link>
             <span className="opacity-50">/</span>
-            <span>Agricom Platform</span>
+            <span>Climate Intelligence Infra.</span>
           </>
         }
         title="Climate Intelligence"
-        highlight="Platform"
+        highlight="Infrastructure"
       >
         Digital Infrastructure for Climate Smart Agriculture & Insurance
       </PageHeader>
