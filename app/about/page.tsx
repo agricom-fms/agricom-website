@@ -20,24 +20,24 @@ import {
 
 const WHY_CHOOSE_US = [
   {
-    icon: Crop,
-    title: "Tailored Solutions",
-    desc: "Designed for the agricultural sector.",
+    icon: Globe,
+    title: "Climate Intelligence",
+    desc: "AI, satellite imagery and weather analytics that provide real-time visibility into agricultural risks.",
   },
   {
-    icon: Globe,
-    title: "Technology-Driven",
-    desc: "Leveraging satellite data and digital platforms for efficiency.",
+    icon: Agribusiness,
+    title: "Integrated Solutions",
+    desc: "Insurance, climate advisory, pensions and input financing delivered through one connected ecosystem.",
   },
   {
     icon: Clock,
-    title: "Fast & Transparent Process",
-    desc: "From onboarding to claims payouts.",
+    title: "Localized Farmer Engagement",
+    desc: "Communicate with farmers through SMS, USSD and automated voice calls in local languages.",
   },
   {
-    icon: ShieldCheck,
-    title: "Transparent Pricing",
-    desc: "No hidden fees. Clear, honest quotes for all services.",
+    icon: Input,
+    title: "Scalable Digital Infrastructure",
+    desc: "Purpose built technology that enables insurers, governments and development partners to deliver agricultural services efficiently and at scale.",
   },
 ];
 
@@ -54,8 +54,13 @@ const CORE_VALUES = [
   },
   {
     icon: Crop,
-    title: "Sustainability",
-    desc: "Promoting long-term financial and agricultural stability.",
+    title: "FarmerCentric",
+    desc: "We design every solution around the realities, challenges and aspirations of farmers.",
+  },
+  {
+    icon: Globe,
+    title: "Impact",
+    desc: "We measure success by the resilience we create and the lives we improve.",
   },
 ];
 
@@ -63,9 +68,8 @@ export default function AboutPage() {
   return (
     <main>
       <PageHeader crumb="About" title="About" highlight="Agricom Assurance.">
-        We are a leading AgriTech insurance provider empowering farmers,
-        agribusinesses and rural communities with transparent, technology-driven
-        cover.
+        <span className="block mb-2 font-medium text-white">Building Climate Resilience Through Intelligence, Innovation and Financial Inclusion.</span>
+        Agricom Assurance is a climate risk intelligence and digital agricultural infrastructure company transforming how farmers, insurers, governments, and agribusinesses manage agricultural risk. Through climate intelligence, agricultural insurance, micro-pensions, input financing, and digital advisory services, we are building more resilient agricultural systems across Africa.
       </PageHeader>
 
       {/* Story */}
@@ -83,18 +87,13 @@ export default function AboutPage() {
           <Reveal delay={80}>
             <Eyebrow>Our story</Eyebrow>
             <h2 className="mt-3.5 text-[clamp(21px,2.4vw,32px)]">
-              Protection made simple, fast and affordable.
+              Born from Experience. Built for Africa&apos;s Farmers.
             </h2>
             <p className="mt-[26px] text-[clamp(15px,1.25vw,18px)] text-body">
-              Started with a passion for helping smallholder farmers, we blend
-              insurance expertise with data and satellite insights to make
-              protection simple, fast and affordable.
+              Agricom Assurance was founded after witnessing firsthand how climate shocks can wipe out a farmer&apos;s livelihood in a single season. What began as a mission to improve access to agricultural insurance has grown into a technology company developing climate intelligence, digital infrastructure, and inclusive financial solutions that help farmers anticipate risks, protect their investments, and secure their futures.
             </p>
             <p className="mt-3.5 text-[clamp(15px,1.25vw,18px)] text-body">
-              We rebuilt agricultural insurance from the ground up: transparent
-              terms, satellite-verified claims, and payouts that arrive in time
-              to replant protecting tens of thousands of farmers across crops
-              and agribusiness.
+              Today, we are building an integrated ecosystem that empowers farmers not only to recover from climate risks, but to become more resilient before those risks occur.
             </p>
           </Reveal>
         </Container>
@@ -106,7 +105,7 @@ export default function AboutPage() {
           <SectionHeading eyebrow="Why Agricom" title="Why choose us?">
             Whether you need quick support, a season-long cover, or regular risk
             advisory, we bring honest pricing, reliable service and a
-            customer-first mindset.
+            customer first mindset.
           </SectionHeading>
           <div className="grid grid-cols-1 gap-[22px] md:grid-cols-2">
             {WHY_CHOOSE_US.map((item, index) => (
@@ -130,7 +129,7 @@ export default function AboutPage() {
       <section className="section pt-0">
         <Container>
           <SectionHeading center eyebrow="What drives us" title="Core values." />
-          <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2 lg:grid-cols-4">
             {CORE_VALUES.map((value, index) => (
               <Reveal
                 key={value.title}
@@ -159,8 +158,7 @@ export default function AboutPage() {
               <FeatureIcon icon={Globe} className="mb-5" />
               <h3 className="text-[clamp(18px,1.8vw,22px)]">Our vision</h3>
               <p className="mt-2.5 text-[clamp(15px,1.25vw,18px)] text-body">
-                To be the leading provider of agricultural financial solutions
-                in Africa.
+                To build Africa&apos;s leading climate risk intelligence and digital agricultural infrastructure powering resilient farming communities.
               </p>
             </Reveal>
             <Reveal
@@ -170,8 +168,7 @@ export default function AboutPage() {
               <FeatureIcon icon={Agribusiness} className="mb-5" />
               <h3 className="text-[clamp(18px,1.8vw,22px)]">Our mission</h3>
               <p className="mt-2.5 text-[clamp(15px,1.25vw,18px)] text-body">
-                To ensure financial stability for farmers through innovative,
-                inclusive and reliable services.
+                To empower farmers and agricultural institutions with technology driven insurance, climate intelligence and inclisive financial solutions that reduce risk, improve productivity and strenthen livelihoods.
               </p>
             </Reveal>
           </div>

@@ -10,12 +10,10 @@ export default function ServicesPreview() {
     <section className="section" id="services">
       <Container>
         <SectionHeading
-          eyebrow="What we cover"
-          title="Protection for every stage of the growing cycle."
+          eyebrow="Our Solutions"
+          title="Protect farms. Empower farmers. Digitize agriculture. Build financial resilience."
         >
-          Modular policies built around real agricultural risk backed by
-          satellite data, weather indices and a claims process you can actually
-          trust.
+          Integrated Solutions for Climate-Smart Agriculture. From protecting farms against climate risks to providing climate intelligence, retirement security, digital advisory, and input financing, Agricom delivers connected solutions that help farmers and agricultural institutions build resilience, improve productivity, and grow sustainably.
         </SectionHeading>
         <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service, index) => (

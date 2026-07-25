@@ -332,10 +332,10 @@ export const VALUES: IconCard[] = [
 ];
 
 export const ABOUT_STATS = [
-  { value: "48K+", label: "Farmers insured" },
-  { value: "₵12.4B", label: "Claims paid out" },
-  { value: "320+", label: "Cooperatives served" },
-  { value: "72hr", label: "Average payout" },
+  { value: "3M+", label: "Potential Farmers Reached" },
+  { value: "19", label: "Strategic Partnerships" },
+  { value: "5", label: "Integrated Solutions" },
+  { value: "2", label: "Countries of Operations" },
 ];
 
 export const TEAM = [
