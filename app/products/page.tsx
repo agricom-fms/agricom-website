@@ -8,13 +8,11 @@ import CtaBand from "@/components/sections/CtaBand";
 import { SERVICE_FEATURES, AGRICOM_SERVICES } from "@/lib/content";
 import { ICONS } from "@/components/icons";
 
-export default function ServicesPage() {
+export default function ProductsPage() {
   return (
     <main>
-      <PageHeader crumb="Products" title="Cover for every acre, herd" highlight="and harvest.">
-        Modular agricultural insurance built on real risk data. Mix and match
-        the protection your operation needs from a single smallholder plot to a
-        regional cooperative.
+      <PageHeader crumb="Products" title="Solutions for a More" highlight="Resilient Agricultural Future.">
+        Agricom Assurance develops integrated climate risk intelligence, agricultural insurance, financial inclusion, and digital agriculture solutions that empower farmers, strengthen agricultural institutions, and build more resilient food systems across Africa. Whether you're a farmer seeking protection, an insurer looking to scale agricultural insurance, an agribusiness supporting producers, or a development organization driving agricultural transformation, our solutions are designed to help you manage risk, improve productivity, and create lasting impact.
       </PageHeader>
 
       {/* Feature rows */}
