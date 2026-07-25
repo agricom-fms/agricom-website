@@ -23,6 +23,7 @@ export default function ServicesPreview() {
                 title={service.title}
                 desc={service.desc}
                 href={service.href || "/products"}
+                ctaText={service.ctaText}
               />
             </Reveal>
           ))}

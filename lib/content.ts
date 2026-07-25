@@ -19,6 +19,7 @@ interface IconCard {
   title: string;
   desc: string;
   href?: string;
+  ctaText?: string;
 }
 
 interface ServiceFeature extends IconCard {
@@ -84,24 +85,28 @@ export const SERVICES: IconCard[] = [
     title: "Crop Insurance",
     desc: "Protect your farm against drought, floods, pests, and other climate risks with our technology-driven insurance.",
     href: "/products/crop-insurance",
+    ctaText: "Protect my Farm",
   },
   {
     icon: "users",
     title: "FarmerCare MicroPensions",
     desc: "A flexible micro-pension and protection solution designed for farmers and informal sector workers to build financial security.",
     href: "/products/farmercare",
+    ctaText: "Start Saving",
   },
   {
     icon: "globe",
-    title: "Agricom Platform",
+    title: "Climate Intelligence Infra.",
     desc: "Our digital platform helping insurers, agribusinesses, and financial institutions manage farmers more efficiently.",
-    href: "/products/agricom-platform",
+    href: "/products/climate intelligence",
+    ctaText: "Request a Demo",
   },
   {
     icon: "input",
     title: "Input Financing",
     desc: "Access seeds, fertilizers, and other essential inputs at the beginning of the season and repay after harvest.",
     href: "/products/input-financing",
+    ctaText: "Apply now",
   },
 ];
 
@@ -218,7 +223,7 @@ export const SERVICE_FEATURES: ServiceFeature[] = [
     cta: "Learn More",
     href: "/products/crop-insurance",
     image:
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1000&q=80&auto=format&fit=crop",
+      "/images/crop.jpeg",
     imageAlt: "Crop field",
     reverse: false,
   },
@@ -230,20 +235,20 @@ export const SERVICE_FEATURES: ServiceFeature[] = [
     cta: "Learn More",
     href: "/products/farmercare",
     image:
-      "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1000&q=80&auto=format&fit=crop",
+      "/images/farmercare.jpeg",
     imageAlt: "FarmerCare MicroPensions",
     reverse: true,
   },
   {
     icon: "globe",
-    title: "Agricom Platform",
+    title: "Climate Intelligence Infrastructure",
     desc: "Our digital platform helps insurers, governments, agribusinesses, NGOs, cooperatives, and financial institutions manage farmers more efficiently. From digital farmer registration and geospatial mapping to climate intelligence, insurance management, and analytics, everything is available in one powerful platform.",
     chips: ["Farmer registration & profiling", "GPS & farm mapping", "Climate intelligence dashboard", "Insurance & claims management", "Real-time analytics & reporting", "API integrations"],
     cta: "Learn More",
     href: "/products/agricom-platform",
     image:
-      "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1000&q=80&auto=format&fit=crop",
-    imageAlt: "Agricom Platform",
+      "/images/climate.jpeg",
+    imageAlt: "Climate Intelligence Infrastructure",
     reverse: false,
   },
   {
@@ -349,7 +354,7 @@ export const TEAM = [
   },
   {
     name: "Daniel Arhin Oduro",
-    role: "Head of Claims",
+    role: "Research Lead",
     image:
       "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600&q=80&auto=format&fit=crop",
     socials: { linkedin: "https://www.linkedin.com/in/daniel-arhin-oduro" },
