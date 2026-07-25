@@ -49,9 +49,10 @@ export const CONTACT = {
 };
 
 export const HERO_STATS = [
-  { value: "48K+", label: "Farmers insured" },
-  { value: "₵12.4B", label: "Claims paid out" },
-  { value: "72hr", label: "Avg. payout time" },
+  { value: "3M+", label: "Potential Farmers Reached" },
+  { value: "19", label: "Strategic Partnerships" },
+  { value: "5", label: "Integrated Solutions" },
+  { value: "2", label: "Countries of Operations" },
 ];
 
 export const TRUST_LOGOS = [
