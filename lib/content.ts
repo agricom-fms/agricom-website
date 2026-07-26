@@ -623,8 +623,9 @@ export const FOOTER_COLUMNS = [
     links: [
       { label: "About us", href: "/about" },
       { label: "Blog", href: "/blog" },
-      { label: "Gallery", href: "/gallery" },
+      // { label: "Gallery", href: "/gallery" },
       { label: "Contact", href: "/contact" },
+      { label: "Careers", href: "" },
     ],
   },
 ];
