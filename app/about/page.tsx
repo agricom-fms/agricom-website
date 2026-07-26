@@ -200,7 +200,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="section pt-0">
+      {/* <section className="section pt-0">
         <Container>
           <SectionHeading
             center
@@ -209,7 +209,7 @@ export default function AboutPage() {
           />
           <TeamCarousel team={TEAM} />
         </Container>
-      </section>
+      </section> */}
 
       {/* Partner CTA */}
       <section className="section pt-0">
