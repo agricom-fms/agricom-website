@@ -223,7 +223,7 @@ export const SERVICE_FEATURES: ServiceFeature[] = [
     cta: "Learn More",
     href: "/products/crop-insurance",
     image:
-      "/images/crop.jpeg",
+      "/images/cropinsura.jpeg",
     imageAlt: "Crop field",
     reverse: false,
   },
@@ -259,7 +259,7 @@ export const SERVICE_FEATURES: ServiceFeature[] = [
     cta: "Learn More",
     href: "/products/input-financing",
     image:
-      "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=1000&q=80&auto=format&fit=crop",
+      "/images/crop.jpeg",
     imageAlt: "Input Financing",
     reverse: true,
   },
@@ -613,8 +613,9 @@ export const FOOTER_COLUMNS = [
     heading: "Products",
     links: [
       { label: "Crop Insurance", href: "/products" },
-      { label: "Weather-Index", href: "/products" },
-      { label: "Agribusiness", href: "/products" },
+      { label: "Farmercare Micro-Pensions", href: "/products" },
+      { label: "Climate Intelligence Infrastructure", href: "/products" },
+      { label: "Input Financing", href: "/products" },
     ],
   },
   {
