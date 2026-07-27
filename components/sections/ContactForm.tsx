@@ -38,10 +38,10 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="mt-[26px] grid gap-[18px]">
         <div className="grid grid-cols-1 gap-[18px] sm:grid-cols-2">
           <Field label="Full name *">
-            <input type="text" required placeholder="e.g. Amina Bello" className="field-input" />
+            <input type="text" required placeholder="e.g. John Doe" className="field-input" />
           </Field>
           <Field label="Phone *">
-            <input type="tel" required placeholder="+234 800 000 0000" className="field-input" />
+            <input type="tel" required placeholder="+233 240 000 000" className="field-input" />
           </Field>
         </div>
 
