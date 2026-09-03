@@ -77,7 +77,7 @@ export default function Testimonial() {
       <Container>
         <div className="mb-[clamp(28px,4vw,44px)] flex flex-wrap items-end justify-between gap-5">
           <div>
-            <Eyebrow>What farmers say</Eyebrow>
+            <Eyebrow>What stakeholders say</Eyebrow>
             <h2 className="mt-3.5 text-[clamp(21px,2.4vw,32px)]">
               Trusted across the region.
             </h2>
@@ -122,27 +122,36 @@ export default function Testimonial() {
             <article
               key={t.name}
               data-card
-              className="flex shrink-0 snap-start basis-full flex-col rounded-lg border border-mist-200 bg-white p-6 md:basis-[calc((100%-20px)/2)] lg:basis-[calc((100%-40px)/3)] xl:basis-[calc((100%-60px)/4)] 2xl:basis-[calc((100%-80px)/5)]"
+              className="group relative flex shrink-0 snap-start basis-full flex-col justify-between overflow-hidden rounded-2xl border border-mist-200/50 bg-gradient-to-b from-white to-gray-50/50 p-8 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-green-900/5 md:basis-[calc((100%-20px)/2)] lg:basis-[calc((100%-40px)/3)]"
             >
-              <Quote className="mb-3.5 h-[26px] w-[26px] flex-none text-green-500 opacity-50" />
-              <p className="flex-1 font-display text-[14px] font-medium leading-[1.5] text-ink">
-                {t.quote}
-              </p>
-              <div className="mt-5 flex items-center gap-3 border-t border-mist-200 pt-4">
-                <div className="h-10 w-10 flex-none overflow-hidden rounded-full">
+              {/* Decorative background element */}
+              <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-green-500/5 blur-3xl transition-all duration-500 group-hover:bg-green-500/10" />
+              
+              <div className="relative z-10 flex flex-1 flex-col">
+                <Quote className="mb-6 h-10 w-10 flex-none text-green-500/20 transition-transform duration-500 group-hover:scale-110 group-hover:text-green-500/40" />
+                <p className="flex-1 font-display text-[15px] font-medium leading-relaxed text-ink/80 sm:text-[16px] md:text-[17px] md:leading-[1.6]">
+                  "{t.quote}"
+                </p>
+              </div>
+
+              <div className="relative z-10 mt-8 flex items-center gap-4 pt-6">
+                {/* Separator line with gradient */}
+                <div className="absolute left-0 top-0 h-[1px] w-full bg-gradient-to-r from-mist-200/0 via-mist-200 to-mist-200/0 transition-opacity duration-500 group-hover:opacity-50" />
+                
+                <div className="relative h-12 w-12 flex-none overflow-hidden rounded-full ring-2 ring-mist-200 transition-all duration-500 group-hover:ring-green-400">
                   <Image
                     src={t.image}
                     alt={t.name}
-                    width={80}
-                    height={80}
-                    className="h-full w-full object-cover"
+                    width={96}
+                    height={96}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="min-w-0">
-                  <strong className="block truncate font-display text-[13.5px] text-green-700">
+                <div className="min-w-0 flex-1">
+                  <strong className="block truncate font-display text-[15px] font-semibold text-ink transition-colors duration-300 group-hover:text-green-700">
                     {t.name}
                   </strong>
-                  <span className="block truncate text-[12px] text-muted">
+                  <span className="block truncate text-[13px] font-medium text-green-600/80">
                     {t.role}
                   </span>
                 </div>
