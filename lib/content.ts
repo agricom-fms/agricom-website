@@ -158,60 +158,58 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "When the rains failed last season, the payout reached my cooperative before the next planting. Agricom kept 200 families farming.",
-    name: "Amina Bello",
-    role: "Chair, GreenFields Cooperative",
-    image:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&auto=format&fit=crop",
+      "Agricom Climate smart Insurance solution is just what the African market needs right now.",
+    name: "Lemmy Manje",
+    role: "Founder & CEO Finprobity solutions",
+    image:"/partners/finprobity.png"
   },
   {
     quote:
-      "The claim was settled in 48 hours no adjuster, no paperwork. I had cash to replant while it still mattered.",
-    name: "Kwame Mensah",
-    role: "Maize farmer, RiverDelta",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop",
+      "This is more than innovation-it's a step toward food security, climate resilience, and financial empowerment for the people who keep Ghana fed.",
+    name: "UNDP",
+    role: "UNDP Ghana",
+    image: "/partners/undp.png",
   },
-  {
-    quote:
-      "Premiums that scale to my plot size mean cover finally makes sense for a smallholder like me.",
-    name: "Fatima Sani",
-    role: "Horticulture grower, Sahel",
-    image:
-      "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    quote:
-      "Our lenders gained confidence the moment we enrolled. Credit-linked cover kept the mill running through a hard year.",
-    name: "Joseph Adeyemi",
-    role: "Director, Savanna Mills",
-    image:
-      "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    quote:
-      "I enrolled the whole co-op from a basic phone over USSD. Every member is covered, even offline.",
-    name: "Grace Achieng",
-    role: "Secretary, HarvestLink Co-op",
-    image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    quote:
-      "Transparent terms, no jargon. For the first time I know exactly what I pay for and when it pays out.",
-    name: "Daniel Okoro",
-    role: "Cooperative lead, GreenFields",
-    image:
-      "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    quote:
-      "Satellite-verified claims meant no one came to argue about my losses. The data spoke, and we got paid.",
-    name: "Esther Banda",
-    role: "Grain farmer, Savanna belt",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&auto=format&fit=crop",
-  },
+  // {
+  //   quote:
+  //     "Premiums that scale to my plot size mean cover finally makes sense for a smallholder like me.",
+  //   name: "Fatima Sani",
+  //   role: "Horticulture grower, Sahel",
+  //   image:
+  //     "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&q=80&auto=format&fit=crop",
+  // },
+  // {
+  //   quote:
+  //     "Our lenders gained confidence the moment we enrolled. Credit-linked cover kept the mill running through a hard year.",
+  //   name: "Joseph Adeyemi",
+  //   role: "Director, Savanna Mills",
+  //   image:
+  //     "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600&q=80&auto=format&fit=crop",
+  // },
+  // {
+  //   quote:
+  //     "I enrolled the whole co-op from a basic phone over USSD. Every member is covered, even offline.",
+  //   name: "Grace Achieng",
+  //   role: "Secretary, HarvestLink Co-op",
+  //   image:
+  //     "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600&q=80&auto=format&fit=crop",
+  // },
+  // {
+  //   quote:
+  //     "Transparent terms, no jargon. For the first time I know exactly what I pay for and when it pays out.",
+  //   name: "Daniel Okoro",
+  //   role: "Cooperative lead, GreenFields",
+  //   image:
+  //     "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=600&q=80&auto=format&fit=crop",
+  // },
+  // {
+  //   quote:
+  //     "Satellite-verified claims meant no one came to argue about my losses. The data spoke, and we got paid.",
+  //   name: "Esther Banda",
+  //   role: "Grain farmer, Savanna belt",
+  //   image:
+  //     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&auto=format&fit=crop",
+  // },
 ];
 
 export const SERVICE_FEATURES: ServiceFeature[] = [
