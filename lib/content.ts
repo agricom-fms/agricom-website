@@ -98,7 +98,7 @@ export const SERVICES: IconCard[] = [
     icon: "globe",
     title: "Climate Intelligence Infra.",
     desc: "Our digital platform helping insurers, agribusinesses, and financial institutions manage farmers more efficiently.",
-    href: "/products/climate intelligence",
+    href: "/products/agricom-platform",
     ctaText: "Request a Demo",
   },
   {
@@ -152,7 +152,7 @@ export interface Testimonial {
   quote: string;
   name: string;
   role: string;
-  image: string;
+  image?: string;
 }
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -161,14 +161,14 @@ export const TESTIMONIALS: Testimonial[] = [
       "Agricom Climate smart Insurance solution is just what the African market needs right now.",
     name: "Lemmy Manje",
     role: "Founder & CEO Finprobity solutions",
-    image:"/partners/finprobity.png"
+    // image:"/partners/finprobity.png"
   },
   {
     quote:
       "This is more than innovation-it's a step toward food security, climate resilience, and financial empowerment for the people who keep Ghana fed.",
     name: "UNDP",
     role: "UNDP Ghana",
-    image: "/partners/undp.png",
+    // image: "/partners/undp.png",
   },
   // {
   //   quote:

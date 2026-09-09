@@ -138,7 +138,7 @@ export default function Testimonial() {
                 {/* Separator line with gradient */}
                 <div className="absolute left-0 top-0 h-[1px] w-full bg-gradient-to-r from-mist-200/0 via-mist-200 to-mist-200/0 transition-opacity duration-500 group-hover:opacity-50" />
                 
-                <div className="relative h-12 w-12 flex-none overflow-hidden rounded-full ring-2 ring-mist-200 transition-all duration-500 group-hover:ring-green-400">
+                {/* <div className="relative h-12 w-12 flex-none overflow-hidden rounded-full ring-2 ring-mist-200 transition-all duration-500 group-hover:ring-green-400">
                   <Image
                     src={t.image}
                     alt={t.name}
@@ -146,7 +146,7 @@ export default function Testimonial() {
                     height={96}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                </div>
+                </div> */}
                 <div className="min-w-0 flex-1">
                   <strong className="block truncate font-display text-[15px] font-semibold text-ink transition-colors duration-300 group-hover:text-green-700">
                     {t.name}
