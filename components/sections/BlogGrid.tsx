@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import BlogImage from "@/components/ui/BlogImage";
 import Reveal from "@/components/ui/Reveal";
 import Chip from "@/components/ui/Chip";
 import { BLOG_FILTERS, formatDate } from "@/lib/content";
@@ -44,7 +44,7 @@ export default function BlogGrid({ posts }: BlogGridProps) {
               className="group block h-full overflow-hidden rounded-lg border border-mist-200 bg-white shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-smooth hover:-translate-y-1.5 hover:border-green-500/40 hover:shadow-md"
             >
               <div className="aspect-[16/11] overflow-hidden">
-                <Image
+                <BlogImage
                   src={post.image}
                   alt={post.title}
                   width={800}
