@@ -1,5 +1,7 @@
-import Image from "next/image";
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
+import BlogImage from "@/components/ui/BlogImage";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Container from "@/components/ui/Container";
@@ -90,7 +92,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <Container>
           <Reveal className="overflow-hidden rounded-lg border border-mist-200 shadow-sm">
             <div className="aspect-[16/8] overflow-hidden">
-              <Image
+              <BlogImage
                 src={post.image}
                 alt={post.title}
                 width={1700}

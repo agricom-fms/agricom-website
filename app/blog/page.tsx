@@ -1,3 +1,6 @@
+// Blog page
+export const dynamic = "force-dynamic";
+
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import BlogGrid from "@/components/sections/BlogGrid";
