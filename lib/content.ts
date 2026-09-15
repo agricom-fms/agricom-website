@@ -41,12 +41,26 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT = {
-  address: "Ablekuma Curve - Accra",
-  addressShort: "Ablekuma Curve - Accra",
+  address: "1 Airport Square, Accra Ghana",
+  addressShort: "1 Airport Square, Accra Ghana",
   phone: "+233 534 493 357",
-  phoneHref: "tel:+23353449357",
+  phoneHref: "tel:+233534493357",
   email: "info@agricomassurance.com",
   hours: "Mon – Fri, 8:00 – 18:00 GMT",
+  offices: [
+    {
+      country: "Ghana",
+      address: "1 Airport Square, Accra Ghana",
+      phone: "+233 534 493 357",
+      phoneHref: "tel:+233534493357",
+    },
+    {
+      country: "Rwanda",
+      address: "Deco Center, Nyarutarama Kigali, Rwanda",
+      phone: "+250 799481163",
+      phoneHref: "tel:+250799481163",
+    },
+  ],
 };
 
 export const HERO_STATS = [
