@@ -8,12 +8,19 @@ import { MapPin, Phone, Mail, Clock } from "@/components/icons";
 import { CONTACT } from "@/lib/content";
 
 const DETAILS = [
-  { icon: MapPin, title: "Head office", body: CONTACT.address },
+  { icon: MapPin, title: "Ghana Office", body: CONTACT.offices[0].address },
+  { icon: MapPin, title: "Rwanda Office", body: CONTACT.offices[1].address },
   {
     icon: Phone,
-    title: "Call us",
-    body: CONTACT.phone,
-    href: CONTACT.phoneHref,
+    title: "Call us (Ghana)",
+    body: CONTACT.offices[0].phone,
+    href: CONTACT.offices[0].phoneHref,
+  },
+  {
+    icon: Phone,
+    title: "Call us (Rwanda)",
+    body: CONTACT.offices[1].phone,
+    href: CONTACT.offices[1].phoneHref,
   },
   {
     icon: Mail,

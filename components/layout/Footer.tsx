@@ -45,24 +45,35 @@ export default function Footer() {
             <h4 className="mb-[18px] text-[12.5px] font-semibold uppercase tracking-[0.1em] text-white">
               Get in touch
             </h4>
-            <Link
-              href="/contact"
-              className="block py-1.5 text-[13.5px] text-[#9FC2A9] transition-colors hover:text-lime-300"
-            >
-              {CONTACT.addressShort}
-            </Link>
-            <a
-              href={CONTACT.phoneHref}
-              className="block py-1.5 text-[13.5px] text-[#9FC2A9] transition-colors hover:text-lime-300"
-            >
-              {CONTACT.phone}
-            </a>
-            <a
-              href={`mailto:${CONTACT.email}`}
-              className="block py-1.5 text-[13.5px] text-[#9FC2A9] transition-colors hover:text-lime-300"
-            >
-              {CONTACT.email}
-            </a>
+            <div className="space-y-4">
+              {CONTACT.offices.map((office) => (
+                <div key={office.country} className="text-[13.5px]">
+                  <span className="block text-[11px] font-semibold uppercase tracking-[0.08em] text-[#C2E2CC]">
+                    {office.country}
+                  </span>
+                  <Link
+                    href="/contact"
+                    className="block py-0.5 text-[#9FC2A9] transition-colors hover:text-lime-300"
+                  >
+                    {office.address}
+                  </Link>
+                  <a
+                    href={office.phoneHref}
+                    className="block py-0.5 text-[#9FC2A9] transition-colors hover:text-lime-300"
+                  >
+                    {office.phone}
+                  </a>
+                </div>
+              ))}
+              <div className="pt-0.5">
+                <a
+                  href={`mailto:${CONTACT.email}`}
+                  className="block py-0.5 text-[13.5px] text-[#9FC2A9] transition-colors hover:text-lime-300"
+                >
+                  {CONTACT.email}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
