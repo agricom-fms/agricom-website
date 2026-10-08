@@ -8,6 +8,7 @@ import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
 import Chip from "@/components/ui/Chip";
 import CtaBand from "@/components/sections/CtaBand";
+import ShareButtons from "@/components/ui/ShareButtons";
 import { formatDate } from "@/lib/content";
 import { prisma } from "@/lib/db";
 
@@ -77,13 +78,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
             <Reveal
               delay={120}
-              className="mt-5 flex flex-wrap items-center gap-2 font-display text-[12.5px] text-muted"
+              className="mt-5 flex flex-wrap items-center justify-between gap-4 font-display text-[12.5px] text-muted border-b border-mist-200/80 pb-5"
             >
-              <span>{post.author}</span>
-              <span className="opacity-50">•</span>
-              <span>{formatDate(post.date.toISOString ? post.date.toISOString() : post.date)}</span>
-              <span className="opacity-50">•</span>
-              <span>{post.readTime}</span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span>{post.author}</span>
+                <span className="opacity-50">•</span>
+                <span>{formatDate(post.date.toISOString ? post.date.toISOString() : post.date)}</span>
+                <span className="opacity-50">•</span>
+                <span>{post.readTime}</span>
+              </div>
+              <ShareButtons title={post.title} slug={slug} variant="inline" />
             </Reveal>
           </Container>
         </section>
@@ -121,6 +125,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   {paragraph}
                 </Reveal>
               ))}
+
+              {/* Share Box */}
+              <div className="mt-12">
+                <ShareButtons title={post.title} slug={slug} variant="card" />
+              </div>
 
               <div className="mt-10 border-t border-mist-200 pt-6">
                 <Link
